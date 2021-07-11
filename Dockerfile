@@ -1,12 +1,12 @@
-ARG FROM=ubuntu:bionic
+ARG FROM=10.34.100.113/skyatlas/loci-base:focal
 FROM ${FROM}
 
 ENV PATH=/var/lib/openstack/bin:$PATH
 ARG PROJECT
 ARG WHEELS=loci/requirements:master-ubuntu
 ARG PROJECT_REPO=https://opendev.org/openstack/${PROJECT}
-ARG PROJECT_REF=master
-ARG PROJECT_RELEASE=master
+ARG PROJECT_REF=stable/victoria
+ARG PROJECT_RELEASE=stable/victoria
 ARG DISTRO
 ARG PROFILES
 ARG PIP_PACKAGES=""
