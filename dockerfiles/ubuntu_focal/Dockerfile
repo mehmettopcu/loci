@@ -5,8 +5,8 @@ ARG UBUNTU_URL=http://archive.ubuntu.com/ubuntu/
 ARG CLOUD_ARCHIVE_URL=http://ubuntu-cloud.archive.canonical.com/ubuntu/
 ARG CEPH_URL=http://download.ceph.com/debian-octopus/
 ARG ALLOW_UNAUTHENTICATED=false
-ARG PIP_INDEX_URL=http://mirror.mtl01.inap.opendev.org:8080/pypi/simple/ 
-ARG PIP_TRUSTED_HOST=mirror.mtl01.inap.opendev.org:8080
+ARG PIP_INDEX_URL=https://pypi.python.org/simple/ 
+ARG PIP_TRUSTED_HOST=pypi.python.org
 ENV PIP_INDEX_URL=${PIP_INDEX_URL}
 ENV PIP_TRUSTED_HOST=${PIP_TRUSTED_HOST}
 
